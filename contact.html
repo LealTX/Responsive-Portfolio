@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Jacob Leal's Index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/media.css" />
+ </head>
+<body>
+
+    <section class="topBorder" id="myTopnav">
+        <div class="center">
+            <div class="nameDiv">
+                <h1 class="nameFont">Jacob Leal</h1>
+            </div>
+            <a class="active" href="contact.html">Contact</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="index.html">About</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+        </div>
+    </section>
+
+    <section class="center">
+        <div class="centerContent">
+            <h1 class="mainHeader">Contact</h1>
+            <p class="mainEntry">Name</p>
+            <input class="entrySingle" type="text" name="name" value="">
+            <p class="mainEntry">Email</p>
+            <input class="entrySingle" type="text" name="email" value="">
+            <p class="mainEntry">Messgae</p>
+            <textarea class="entryMessage" type="text" name="message" value=""></textarea>
+            <input id="submitButton" type="submit" value="Submit">
+        </div>
+    </section>
+
+    <section class="footer">
+        <h5>Copyright@</h5>
+    </section>
+
+    <script>
+            function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topBorder") {
+            x.className += " responsive";
+        } else {
+            x.className = "topBorder";
+        }
+    }
+    </script>
+
+
+</body>
+</html>
